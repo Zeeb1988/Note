@@ -32,9 +32,9 @@ git pull --all
 
 8.分支
 
-git checkout main 切换到main分支
-git merge master  将master分支内容与当前分支内容合并
+git checkout main     切换到main分支
+git merge master      将master分支内容与当前分支内容合并
 git branch -d master  删除master分支
-git branch master  创建master分支
-git branch -a 查看所有本地分支和远程分支
+git branch master     创建master分支
+git branch -a         查看所有本地分支和远程分支
 
