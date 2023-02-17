@@ -385,3 +385,155 @@ public class UsingDeltaTime : MonoBehaviour
 }
 #endregion
 
+16.数据类型
+#region
+{ 
+         ·Value       ·Referance
+
+         ·int         ·Classes
+         ·float         ·Transform
+         ·double        ·GameObject
+         ·bool
+         ·char
+         ·Structs
+           ·Vector3
+           ·Quaternion
+}
+#endregion
+
+17.Instantiate
+#region
+Instantiate(要生成的物体，位置，角度)
+public class UsingInstantiate : MonoBehaviour
+{
+    public Rigidbody rocketPrefab;
+    public Transform barrelEnd;
+
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Rigidbody rocketInstance;
+            //在指定位置生成指定的物体
+            rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
+            rocketInstance.AddForce(barrelEnd.forward * 5000);
+        }
+    }
+}
+#endregion
+
+18.数组
+#region
+数组的定义方式:
+int[] Array = new int[5]
+int[] Array = {12, 5, 3, 6, }
+
+public class Arrays : MonoBehaviour
+{
+    public GameObject[] players;
+
+    void Start()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        //数组常搭配循环使用
+        for (int i = 0; i < players.Length; i++)
+        {
+            Debug.Log("Player Number " + i + " is named " + players[i].name);
+        }
+    }
+}
+#endregion
+
+19.Invoke
+#region
+Invoke("函数名",延迟调用时间)
+InvokeRepeating("函数名",延迟调用时间,要重复调用的次数)
+CancelInvoke("函数名")
+
+public class InvokeScript : MonoBehaviour
+{
+    public GameObject target;
+
+
+    void Start()
+    {
+        Invoke("SpawnObject", 2);
+        InvokeRepeating("SpawnObject", 2, 1);
+        CancleInvoke("SpawnObject");
+    }
+
+    void SpawnObject()
+    {
+        Instantiate(target, new Vector3(0, 2, 0), Quaternion.identity);
+    }
+}
+#endregion
+
+20.枚举(enum)
+#region
+枚举通常与Switch语句搭配使用
+
+public class EnumScript : MonoBehaviour
+{
+    enum Direction { North, East, South, West }
+
+    void Start()
+    {
+        Direction myDirection;
+
+        myDirection = Direction.North;
+    }
+
+    Direction ReverseDirection(Direction dir)
+    {
+        if (dir == Direction.North)
+            dir = Direction.South;
+        else if (dir == Direction.South)
+            dir = Direction.North;
+        else if (dir == Direction.East)
+            dir = Direction.West;
+        else if (dir == Direction.West)
+            dir = Direction.East;
+
+        return dir;
+    }
+}
+#endregion
+
+21.Switch语句
+#region
+可用于状态机的状态切换
+
+public class ConversationScript : MonoBehaviour
+{
+    public int intelligence = 5;
+
+
+    void Greet()
+    {
+        switch (intelligence)
+        {
+            case 5:
+                print("Why hello there good sir! Let me teach you about Trigonometry!");
+                break;
+            case 4:
+                print("Hello and good day!");
+                break;
+            case 3:
+                print("Whadya want?");
+                break;
+            case 2:
+                print("Grog SMASH!");
+                break;
+            case 1:
+                print("Ulg, glib, Pblblblblb");
+                break;
+            default:
+                print("Incorrect intelligence level.");
+                break;
+        }
+    }
+}
+#endregion
+
