@@ -1,0 +1,8 @@
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\bin\Debug\Socket_Server_Tcp.exe.config
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\bin\Debug\Socket_Server_Tcp.exe
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\bin\Debug\Socket_Server_Tcp.pdb
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\obj\Debug\Socket_Server_Tcp.csproj.AssemblyReference.cache
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\obj\Debug\Socket_Server_Tcp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\obj\Debug\Socket_Server_Tcp.csproj.CoreCompileInputs.cache
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\obj\Debug\Socket_Server_Tcp.exe
+C:\Users\Zeeb\Desktop\Socket_Server_Tcp\Socket_Server_Tcp\obj\Debug\Socket_Server_Tcp.pdb

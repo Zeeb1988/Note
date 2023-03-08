@@ -1,4 +1,4 @@
-//Lua 弱解释脚本语言语法
+//一、Lua 弱解释脚本语言语法
 
 1.变量声明
 #region
@@ -207,7 +207,7 @@
     local n = 10
     while n > 1 do
         print(n)
-        n = n - 1
+        n = n - 1 //Lua 语言中没有 "n++" 或 "n += 1" 此类语法
         if n == 3 then break end
     end
 }
