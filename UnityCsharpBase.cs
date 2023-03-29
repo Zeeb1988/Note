@@ -160,9 +160,9 @@ public class EnableComponents : MonoBehaviour
 
 7.Translate和Rotate
 #region
-Vector3(0,0,1) 快捷写法 Vector3.forword
+new Vector3(0,0,1) 快捷写法 Vector3.forword
 
-Vector3(0,1,0) 快捷写法 Vector3.up
+new Vector3(0,1,0) 快捷写法 Vector3.up
 
 
 public class TransformFunctions : MonoBehaviour
